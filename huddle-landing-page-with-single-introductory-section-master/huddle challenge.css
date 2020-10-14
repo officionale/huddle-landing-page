@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(images/bg-desktop.svg);
+	background-color: hsl(257, 40%, 49%);
+	background-repeat: no-repeat;
+	width: auto;
+}
+.logo{
+	height: 200px;
+	max-width: 200px;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+}
+.container .illustration-mockups{
+
+}
+article{
+	color: white;
+	font-weight: 400;
+	font-family: garamond;
+}
+h1{
+	font-size: 55px;
+	font-weight: 700;
+	padding-top: 70px;
+	width: 550px;
+	padding-bottom: 20px;
+}
+p{
+	max-width: 500px;
+	font-size: 19px;
+	font-weight: bold;
+}
+.button{
+	padding-top: 20px;
+}
+button{
+	background-color: white;
+	color: purple;
+	height: 50px;
+	width: 200px;
+	border-radius: 30px;
+	border: none;
+	font-weight: bold;
+	font-family: garamond;
+	font-size: 17px;
+}
+img.facebook{
+	height: 30px;
+	border-radius: 100px;
+	border: 1px solid black;
+	padding: 5px;
+	margin-right: 5px;
+}
+@media (min-width: 376px){
+
+	.logo{
+		padding-left: 50px;
+	}
+	.container .illustration-mockups{
+		padding-left: 50px;
+	}
+	h1{
+		padding-left: 60px;
+	}
+	p{
+		padding-left: 60px;
+	}
+	.button{
+		padding-left: 60px;
+	}
+	.face{
+		padding-left: 1200px;
+		display: flex;
+	}
+}
+
+@media (max-width: 375px) and (min-width:1px) {
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		background-image: url("images/bg-mobile.svg");
+		background-position: center;
+		width: 375px;
+		position: absolute;
+	}
+	.logo{
+		height: 120px;
+		width: 120px;
+		position: relative;
+		left: 15%;
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 15%;
+		font-weight: normal;
+	}
+	.illustration-mockups{
+		height: 180px;
+		width: 280px;
+		padding: 0;
+		padding-bottom: 30px;
+	}
+	article{
+		text-align: center;
+	}
+	h1{
+		font-size: 25px;
+		width: 250px;
+		justify-content: center;
+		text-align: center;
+		padding: 0;
+		padding-bottom: 20px;
+	}
+	p{
+		text-align: center;
+		font-size: 17px;
+		max-width: 250px;
+		padding: 0;
+		padding-bottom: 10px;
+		font-weight: 200;
+	}
+	.button{
+		position: relative;
+		right: 15%;
+		padding-bottom: 50px;
+	}
+	button{
+		width: 150px;
+		height: 35px;
+		font-size: 12px;
+	}
+	.face{
+		display: flex;
+		padding: 5px;
+		text-align: center;
+		padding-left: 110px;
+	}
+	img.facebook{
+	margin-right: 20px;
+	height: 20px;
+	}
+}
