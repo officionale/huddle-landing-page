@@ -3,150 +3,170 @@
 	margin: 0;
 }
 body{
-	background-image: url(images/bg-desktop.svg);
-	background-color: hsl(257, 40%, 49%);
+	background-image: url("images/bg-mobile.svg");
+	background-position: center;
 	background-repeat: no-repeat;
-	width: auto;
+	width: 100%;
+	background-color:  hsl(257, 40%, 49%);
 }
 .logo{
-	height: 200px;
-	max-width: 200px;
+	width: 30%;
+	height: 5em;
 }
 .container{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
-.container .illustration-mockups{
-
+.illustration-mockups{
+	margin: auto auto;
+	width: 80%;
+	height: 15em;
+	padding-bottom: 1em;
 }
 article{
 	color: white;
 	font-weight: 400;
-	font-family: garamond;
+	display: flex;
+	flex-direction: column;
 }
 h1{
-	font-size: 55px;
-	font-weight: 700;
-	padding-top: 70px;
-	width: 550px;
-	padding-bottom: 20px;
+	font-family: 'Poppins', Sans-serif;
+	font-weight: 550;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	text-align: center;
+	margin: auto auto;
+	max-width: 13em;
+	line-height: 1.7em;
+	font-size: 1.7em;
 }
 p{
-	max-width: 500px;
-	font-size: 19px;
-	font-weight: bold;
+	padding-top: 1em;
+	line-height: 1.8em;
+	margin: auto;
+	font-family: 'Open+Sans', Sans-serif;
+	font-weight: 300;
+	max-width: 20em;
+	text-align: center;
+	font-size: 1.2em;
 }
 .button{
-	padding-top: 20px;
+	margin-top: 2em;
+	display: flex;
+	text-align: center;
 }
 button{
+	margin: auto auto;
+	font-family: 'Open+Sans', Sans-serif;
 	background-color: white;
 	color: purple;
-	height: 50px;
-	width: 200px;
+	height: 40px;
+	width: 70%;
 	border-radius: 30px;
 	border: none;
-	font-weight: bold;
-	font-family: garamond;
-	font-size: 17px;
+	font-size: 1em;
 }
-img.facebook{
-	height: 30px;
-	border-radius: 100px;
-	border: 1px solid black;
-	padding: 5px;
-	margin-right: 5px;
+.sdc{
+	display: flex;
 }
-@media (min-width: 376px){
-
-	.logo{
-		padding-left: 50px;
-	}
-	.container .illustration-mockups{
-		padding-left: 50px;
-	}
-	h1{
-		padding-left: 60px;
-	}
-	p{
-		padding-left: 60px;
-	}
-	.button{
-		padding-left: 60px;
-	}
-	.face{
-		padding-left: 1200px;
-		display: flex;
-	}
+.face{
+	margin: auto;
+	display: flex;
+	margin-top: 2em
 }
 
-@media (max-width: 375px) and (min-width:1px) {
-	*{
-		padding: 0;
-		margin: 0;
-	}
+.fab{
+	margin-right: 1em;
+	font-size: 1em;
+	border: 2px solid white;
+	border-radius: 2em;
+	padding: 0.4em;
+	color: white;
+}
+.fab:first-child{
+	padding: 0.4em 0.6em 0.4em 0.6em;
+}
+
+
+
+@media screen and (min-width: 375px){
 	body{
-		background-image: url("images/bg-mobile.svg");
-		background-position: center;
-		width: 375px;
-		position: absolute;
+		background-image: url(images/bg-desktop.svg);
+		background-color: hsl(257, 40%, 49%);
+		background-repeat: no-repeat;
+		width: 100%;
 	}
 	.logo{
-		height: 120px;
-		width: 120px;
-		position: relative;
-		left: 15%;
+		all: unset;
+		width: 13em;
+		height: 8em;
+		margin-left: 7%;
+	}
+	.illustration-mockups{
+		all: unset;
+		width: 50%;
+		height: 70%;
+		margin-top: 1em;
+		margin-left: 3%;
 	}
 	.container{
 		display: flex;
-		flex-direction: column;
-		position: relative;
-		left: 15%;
-		font-weight: normal;
-	}
-	.illustration-mockups{
-		height: 180px;
-		width: 280px;
-		padding: 0;
-		padding-bottom: 30px;
+		flex-direction: row;
+		padding-left: 50px;
 	}
 	article{
-		text-align: center;
+		color: white;
+		font-weight: 400;
 	}
 	h1{
-		font-size: 25px;
-		width: 250px;
-		justify-content: center;
-		text-align: center;
-		padding: 0;
-		padding-bottom: 20px;
+		all: unset;
+		font-family: 'Poppins', Sans-serif;
+		font-weight: 550;
+		font-size: 3em;
+		max-width: 12em;
+		margin-left: 10%;
+		margin-top: 2em;
+		margin-bottom: 0.5em;
 	}
 	p{
-		text-align: center;
-		font-size: 17px;
-		max-width: 250px;
-		padding: 0;
-		padding-bottom: 10px;
-		font-weight: 200;
+		all: unset;
+		padding-top: 0;
+		font-family: 'Open+Sans', Sans-serif;
+		font-size: 1.4em;
+		font-weight: 300;
+		max-width: 30em;
+		margin-left: 10%;
+		line-height: 1.5em;
 	}
 	.button{
-		position: relative;
-		right: 15%;
-		padding-bottom: 50px;
+		all: unset;
+		padding-top: 20px;
+		padding-left: 60px;
 	}
 	button{
-		width: 150px;
-		height: 35px;
-		font-size: 12px;
+		font-family: 'Open+Sans', Sans-serif;
+		background-color: white;
+		color: purple;
+		height: 50px;
+		width: 200px;
+		border-radius: 30px;
+		border: none;
+		font-size: 1.2em;
 	}
 	.face{
+		padding-left: 70%;
 		display: flex;
-		padding: 5px;
-		text-align: center;
-		padding-left: 110px;
 	}
-	img.facebook{
-	margin-right: 20px;
-	height: 20px;
+	.fab{
+		all: unset;
+		margin-right: 1em;
+		font-size: 1.8em;
+		border: 2px solid white;
+		border-radius: 2em;
+		padding: 0.4em;
+		color: white;
+	}
+	.fab:first-child{
+		padding: 0.4em 0.6em 0.4em 0.6em;
 	}
 }
